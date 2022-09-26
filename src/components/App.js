@@ -11,7 +11,7 @@ function App() {
     fetch(baseUrl)
     .then(resp => resp.json())
     .then(data => setListings(data))
-  }, [])
+  }, []) 
 
   const handleDeleting = (listing) => {
     const newList = listings.filter(listObj => listObj.id !== listing.id)
